@@ -1,0 +1,4 @@
+In 1959, Theo Lutz wrote a computer program that generated stochastic texts
+using words taken from Kafka's novel _The Castle_. The implementation was
+carried out on a Zuse Z22 computer. This is a multilingual reimplementation
+of Lutz' text generator using the Grammatical Framework.
