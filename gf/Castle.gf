@@ -10,23 +10,55 @@ abstract Castle = {
     ElemSent ;
     Subject ;
     Thing ;
-    -- Determiner ;
     Quality ;
     Connector ;
 
   fun
-    -- Determine : Determiner -> Thing -> Subject ;
-    Pred : Subject -> Quality -> ElemSent ;
     Connect : Connector -> ElemSent -> ElemSent -> Line ;
-    TFConnect : ElemSent -> ElemSent -> Line ;
     Juxtapose : ElemSent -> ElemSent -> Line ;
 
-    Particularize, Generalize, NegParticularize, NegGeneralize : Thing -> Subject ;
+    Pred : Subject -> Quality -> ElemSent ;
 
-    Count, Stranger, Look, Church, Castle, Picture, Eye, Village, Tower, Farmer, Road, Guest, Day, House, Table, Soldier : Thing ;
-
-    Open, Silent, Strong, Good, Narrow, Near, New, Quiet, Far, Deep, Late, Dark, Free, Large, Old, Angry : Quality ;
-
-    -- Particularizer, Generalizer, NegParticularizer, NegGeneralizer : Determiner ;
     And, Or, Therefore : Connector ;
+
+    Particularize : Thing -> Subject ;
+    Generalize : Thing -> Subject ;
+    NegParticularize : Thing -> Subject ;
+    NegGeneralize : Thing -> Subject ;
+
+
+    Count : Thing ;
+    Stranger : Thing ;
+    Look : Thing ;
+    Church : Thing ;
+    Castle : Thing ;
+    Picture : Thing ;
+    Eye : Thing ;
+    Village : Thing ;
+    Tower : Thing ;
+    Farmer : Thing ;
+    Road : Thing ;
+    Guest : Thing ;
+    Day : Thing ;
+    House : Thing ;
+    Table : Thing ;
+    Soldier : Thing ;
+
+    Open : Quality ;
+    Silent : Quality ;
+    Strong : Quality ;
+    Good : Quality ;
+    Narrow : Quality ;
+    Near : Quality ;
+    New : Quality ;
+    Quiet : Quality ;
+    Far : Quality ;
+    Deep : Quality ;
+    Late : Quality ;
+    Dark : Quality ;
+    Free : Quality ;
+    Large : Quality ;
+    Old : Quality ;
+    Angry : Quality ;
+
 } ;
