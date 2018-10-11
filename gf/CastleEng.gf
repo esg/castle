@@ -4,17 +4,16 @@ concrete CastleEng of Castle = open CatEng, SyntaxEng, ParadigmsEng in {
     ElemSent = Cl ;
     Subject = NP ;
     Thing = CN ;
-    -- Determiner = Det ;
     Quality = AP ;
     Connector = Conj ;
 
   lin
 
     Connect conn c1 c2 = mkText (mkS conn (mkS c1) (mkS c2)) ;
-    TFConnect c1 c2 = mkText (mkText c1) (mkText (mkS (mkAdv "therefore") (mkS c2))) ;
     Juxtapose c1 c2 = mkText (mkText c1) (mkText c2) ;
+
     Pred subj qual = mkCl subj qual ;
-    -- Determine det thing = mkNP det thing ;
+
     Generalize thing = mkNP every_Det thing ;
     Particularize thing = mkNP a_Det thing ;
     NegGeneralize thing = mkNP not_Predet (mkNP every_Det thing) ;
@@ -56,10 +55,6 @@ concrete CastleEng of Castle = open CatEng, SyntaxEng, ParadigmsEng in {
 
     And = and_Conj ;
     Or = or_Conj ;
-
-    -- Generalizer = every_Det ;
-    -- Particularizer = a_Det ;
-    -- NegGeneralizer =
-    -- NegParticularizer =
+    Therefore = mkConj "therefore" ;
 
 } ;
