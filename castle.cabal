@@ -9,7 +9,8 @@ maintainer:          emil@skoeldberg.net
 -- copyright:
 category:            Language
 build-type:          Custom
-data-files:          gf/Castle.pgf
+data-files:          gf/Castle.pgf,
+                     gf/Castle.probs
 extra-source-files:  README.org
 cabal-version:       >=1.10
 
@@ -17,7 +18,7 @@ executable castle
   main-is:             Main.hs
   other-modules:       Paths_castle
   -- other-extensions:
-  build-depends:       base >=4.8 && <4.9,
+  build-depends:       base >=4.8 && <4.12,
                        random,
                        gf
   -- hs-source-dirs:

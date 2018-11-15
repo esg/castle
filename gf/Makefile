@@ -3,7 +3,7 @@ concretes = CastleEng.gf
 all: Castle.pgf
 
 Castle.pgf: $(concretes)
-	gf -make $^
+	gf --make $(concretes)
 
 clean:
 	rm -f $(concretes:.gf=.gfo)
