@@ -1,4 +1,4 @@
-concretes = CastleEng.gf CastleGer.gf
+concretes = CastleEng.gf CastleGer.gf CastleFin.gf
 
 all: Castle.pgf
 
